@@ -1,23 +1,22 @@
 package com.authorname.examplemod
 
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent
 import net.thesilkminer.mc.austin.api.Mojo
-import org.apache.logging.log4j.LogManager
-import org.apache.logging.log4j.Logger
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 
 @Mojo(MOD_ID)
 class ExampleMod {
     static final String MOD_ID = "examplemod" // The value here should match an entry in the META-INF/mods.toml file
-    static final Logger LOGGER = LogManager.getLogger()
+    static final Logger LOGGER = LoggerFactory.getLogger(ExampleMod)
 
     ExampleMod() {
         LOGGER.info "${MOD_ID.capitalize()} starting up"
         LOGGER.info SV(GroovySystem.version)
 
         // for dynamic Groovy, you can use the following:
-        modBus.addListener { FMLCommonSetupEvent event ->
-            LOGGER.info "Hello from FMLCommonSetupEvent"
-        }
+//        modBus.addListener { FMLCommonSetupEvent event ->
+//            LOGGER.info "Hello from FMLCommonSetupEvent"
+//        }
 
         // modBus and forgeBus are non-static properties of type IEventBus that are dynamically added by the @Mojo annotation.
         // For IDE support, in IntelliJ right click modBus/forgeBus -> click lightbulb -> "Add dynamic property..." -> set type to
