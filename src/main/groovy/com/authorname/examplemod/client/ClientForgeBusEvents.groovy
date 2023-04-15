@@ -8,13 +8,13 @@ import net.minecraftforge.eventbus.api.SubscribeEvent
 import net.thesilkminer.mc.austin.api.EventBus
 import net.thesilkminer.mc.austin.api.EventBusSubscriber
 
-import static com.authorname.examplemod.ExampleMod.*
+import static com.authorname.examplemod.ExampleMod.LOGGER
 
 @CompileStatic
-@EventBusSubscriber(modId = MOD_ID, bus = EventBus.FORGE, dist = Dist.CLIENT)
+@EventBusSubscriber(bus = EventBus.FORGE, dist = Dist.CLIENT)
 class ClientForgeBusEvents {
     @SubscribeEvent
-    static void onScreenOpen(final ScreenEvent.Opening event) {
+    static void onScreenOpen(final ScreenEvent.InitScreenEvent event) {
         if (event.screen instanceof TitleScreen)
             LOGGER.info "${SV(event.screen.title.string)}"
     }
