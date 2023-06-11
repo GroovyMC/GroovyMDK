@@ -1,8 +1,9 @@
 {
     "pack": {
-        "description": "ExampleMod resources",
-        "pack_format": 9,
-        "forge:resource_pack_format": 9,
-        "forge:data_pack_format": 10
+        "description": {
+            "text": "ExampleMod resources"
+        },
+        "forge:server_data_pack_format": 12,
+        "pack_format": 13
     }
 }
