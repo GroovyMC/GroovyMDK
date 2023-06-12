@@ -1,10 +1,9 @@
 # GroovyMDK
-A Groovy Mod Development Kit for Forge 1.19.4.
+A Groovy Mod Development Kit for Forge 1.20.
 
 ## Features
 This template includes the following features:
-- [MinecraftForge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.4.html) the popular compatibility layer for Minecraft mods
-- [Parchment](https://parchmentmc.org/) open community-sourced parameter names and javadocs for Minecraft
+- [MinecraftForge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.html) the popular compatibility layer for Minecraft mods
 - [Groovy](https://groovy-lang.org/) the Groovy programming language
 - [GroovyModLoader](https://github.com/GroovyMC/GroovyModLoader) for loading Groovy Forge mods
 - [mods.groovy](https://github.com/GroovyMC/ModsDotGroovy) for mod metadata

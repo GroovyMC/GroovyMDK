@@ -1,6 +1,6 @@
 ModsDotGroovy.make {
     modLoader = 'gml'
-    loaderVersion = '[3,)'
+    loaderVersion = '[4,)'
 
     license = 'All rights reserved'
     issueTrackerUrl = 'https://github.com/GroovyMC/GroovyMDK/issues'
@@ -17,8 +17,8 @@ ModsDotGroovy.make {
         displayUrl = 'https://github.com/GroovyMC/GroovyMDK'
 
         dependencies {
-            forge = '>=45.0.42'
-            minecraft = this.minecraftVersionRange
+            forge = '>=46.0.14'
+            minecraft = this.minecraftVersionRange // this is a special variable that will be replaced with '[1.20,1.21)'
         }
     }
 }
