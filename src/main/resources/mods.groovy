@@ -17,8 +17,8 @@ ModsDotGroovy.make {
         displayUrl = 'https://github.com/GroovyMC/GroovyMDK'
 
         dependencies {
-            forge = '>=46.0.14'
-            minecraft = this.minecraftVersionRange // this is a special variable that will be replaced with '[1.20,1.21)'
+            forge = '>=47.0.1'
+            minecraft = this.minecraftVersionRange // this is a special variable that will be replaced with '[1.20.1,1.21)'
         }
     }
 }
