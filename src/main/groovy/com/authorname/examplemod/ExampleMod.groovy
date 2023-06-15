@@ -1,6 +1,5 @@
 package com.authorname.examplemod
 
-import com.matyrobbrt.gml.BaseGMod
 import com.matyrobbrt.gml.GMod
 import groovy.transform.CompileStatic
 import groovy.transform.PackageScope
@@ -28,7 +27,7 @@ import net.minecraftforge.registries.RegistryObject
 @Slf4j
 @GMod(MOD_ID)
 @CompileStatic
-class ExampleMod implements BaseGMod {
+class ExampleMod {
     @PackageScope static final String MOD_ID = 'examplemod' // The value here should match an entry in the mods.groovy file
 
     // create Deferred Registers to hold Blocks and Items respectively which will all be registered under the "examplemod" namespace

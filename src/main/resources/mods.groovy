@@ -17,7 +17,7 @@ ModsDotGroovy.make {
         displayUrl = 'https://github.com/GroovyMC/GroovyMDK'
 
         dependencies {
-            forge = '>=45.0.42'
+            forge = '>=45.1.0'
             minecraft = this.minecraftVersionRange
         }
     }
