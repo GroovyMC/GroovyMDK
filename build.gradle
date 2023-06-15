@@ -10,9 +10,7 @@ version = '1.20-1.0'
 group = 'com.authorname.examplemod'
 
 // make sure to change all instances of 'examplemod'/'ExampleMod' in the project folder - not just this one!
-base {
-    archivesName = 'examplemod' // your modId - must be lowercase and no spaces.
-}
+base.archivesName = 'examplemod' // your modId - must be lowercase and no spaces.
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -79,8 +77,8 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.20-46.0.14'
 
     // GroovyModLoader
-    compileOnly 'org.groovymc.gml:gml:4.0.0'
-    runtimeOnly('org.groovymc.gml:gml:4.0.0:all') {
+    compileOnly 'org.groovymc.gml:gml:4.0.2'
+    runtimeOnly('org.groovymc.gml:gml:4.0.2:all') {
         exclude module: 'transform'
     }
 
